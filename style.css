@@ -87,9 +87,7 @@ body {
 
 
 
-.nav li:hover {
-    background-color: #00b2e389;
-}
+
 
 .nav li a:hover {
     color: #FF9E18;
@@ -331,7 +329,7 @@ body {
 
 .overlay-header-container {
     padding: 3rem;
-    width: 80%;
+    min-width: 80%;
 }
 
 #header-logo {
@@ -394,6 +392,7 @@ body {
 
     .mobile-hero {
         display: flex;
+        width: 106vw;
     }
 
     .hamburger-menu {
@@ -407,6 +406,7 @@ body {
 
     .mobile-arrow {
         display: flex;
+        width: 10%;
     }
 
     .mobile-logo-container {
@@ -426,6 +426,10 @@ body {
         cursor: pointer;
     }
 
+    .nav li:hover {
+        background-color: #00b2e389;
+    }
+
     .nav ul li {
         display: flex;
         justify-content: space-evenly;
@@ -436,6 +440,7 @@ body {
 
     .nav ul li a {
         font-size: 25px;
+        width: 10%;
     }
 
     .nav.open {
@@ -446,8 +451,7 @@ body {
 
     .close-btn {
         display: block;
-        height: 40px;
-        width: 40px;
+        height: 80%;
         padding-right: 3%;
     }
 
@@ -459,11 +463,14 @@ body {
         align-items: center;
         text-align: left;
         height: 12rem;
+        padding-left: 10%;
+        padding-right: 10%;
+        width: 80%;
     }
     
     .mobile-phone-number h3 {
         color: white;
-        font-size: 25px;
+        font-size: 18px;
         font-family: 'Numans', sans-serif;
     }
     .nav-banner {
@@ -519,11 +526,18 @@ body {
         width: 80%;
     }
 
+    .overlay.show {
+        justify-content: flex-start;
+    }
+
+    .mobile-logo-container, #overlay-img, .overlay-header-container {
+        width: 80%;
+    }
     
 
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 250px) {
     .banner {
         width: 98%;
         flex-direction: column;

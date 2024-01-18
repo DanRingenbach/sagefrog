@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+        content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0, target-densitydpi=device-dpi">
     <title>SageFrog Assessment</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,7 +17,7 @@
 <body>
     <div class="banner">
         <div class="logo">
-            <img src="assets/logo.png" alt="Your Logo">
+            <a href="#"><img src="assets/logo.png" alt="Your Logo"></a>
         </div>
         <div class="nav dropdown">
             <ul onclick="toggleMenu()" class="nav">
@@ -92,8 +93,10 @@
                     <h3>Lorem I. Dolor, Md</h3>
                     <p>Position</p>
                     <div class="card-bio">
-                        <img src="assets/linkedin.png" alt="linkedin icon">
-                        <a href="#">View Bio &#x2192;</a>
+                        <a href="https://www.linkedin.com/in/daniel-ringenbach/" target="_blank"><img
+                                src="assets/linkedin.png" alt="linkedin icon"></a>
+                        <a onclick="openOverlay('assets/card.png', 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.', 'Lorem I. Dolor, Md', 'Position')"
+                            href="#">View Bio &#x2192;</a>
                     </div>
                 </div>
             </div>
@@ -105,8 +108,10 @@
                     <h3>Lorem I. Dolor, Phd, Mph</h3>
                     <p>Position</p>
                     <div class="card-bio">
-                        <img src="assets/linkedin.png" alt="linkedin icon">
-                        <a href="#">View Bio &#x2192;</a>
+                        <a href="https://www.linkedin.com/in/daniel-ringenbach/" target="_blank"><img
+                                src="assets/linkedin.png" alt="linkedin icon"></a>
+                        <a onclick="openOverlay('assets/card.png', 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.', 'Lorem I. Dolor, Phd, Mph', 'Position' )"
+                            href="#">View Bio &#x2192;</a>
                     </div>
                 </div>
             </div>
@@ -117,8 +122,10 @@
                     <h3>Lorem I. Dolor </h3>
                     <p>Position</p>
                     <div class="card-bio">
-                        <img src="assets/linkedin.png" alt="linkedin icon">
-                        <a href="#">View Bio &#x2192;</a>
+                        <a href="https://www.linkedin.com/in/daniel-ringenbach/" target="_blank"><img
+                                src="assets/linkedin.png" alt="linkedin icon"></a>
+                        <a onclick="openOverlay('assets/card.png', 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.', 'Lorem I. Dolor', 'Position' )"
+                            href="#">View Bio &#x2192;</a>
                     </div>
                 </div>
             </div>
@@ -130,7 +137,7 @@
         <img src="assets/overlay-close.png" class="overlay-content">
         <div class="overlay-bio-container">
             <div class="mobile-logo-container">
-                <a  href="https://www.linkedin.com/in/daniel-ringenbach/" target="_blank">
+                <a href="https://www.linkedin.com/in/daniel-ringenbach/" target="_blank">
                     <img class="mobile-linkedin-logo" src="assets/overlayLinkedin.png" alt="LinkedIn Logo">
                 </a>
                 <img src="assets/overlay-close.png" class="mobile-overlay-content">
