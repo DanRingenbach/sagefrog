@@ -1,0 +1,546 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.banner {
+    background-color: #004D71;
+    padding: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #fff;
+    width: 99%;
+    position: sticky;
+    top: 0px;
+}
+
+.logo {
+    max-width: 183px;
+    margin-right: 20px;
+    z-index: 9999999;
+}
+
+.logo img {
+    max-width: 183px;
+}
+
+.nav {
+    flex-grow: .7;
+    text-align: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.phone-number {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+}
+
+.phone-number p {
+    color: #A5BAC9;
+    font-family: 'Numans', sans-serif;
+}
+
+.phone-number a {
+    font-family: 'Merriweather Sans', sans-serif;
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.phone-number a:hover {
+    color: #FF9E18;
+    transition: color 0.5s ease-in-out
+}
+
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    text-align: left;
+    justify-content: center;
+}
+
+.active {
+    color: #FF9E18 !important;
+}
+
+.nav li a {
+    color: white;
+    margin: 0;
+    padding: 10px;
+    text-decoration: none;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+
+
+.nav li:hover {
+    background-color: #00b2e389;
+}
+
+.nav li a:hover {
+    color: #FF9E18;
+    transition: color 0.5s ease-in-out
+}
+
+
+.hero {
+    min-height: 22rem;
+    text-align: right;
+    padding: 50px;
+    background-image: url('assets/hero-img.png');
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.hero-copy {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-right: 3rem;
+}
+
+.hero p,
+.mobile-hero p {
+    margin: 0;
+    color: #3F738D;
+    font-family: 'Numans', sans-serif;
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding-bottom: .5rem;
+}
+
+.hero h1,
+.mobile-hero h1 {
+    margin: 0;
+    color: #6ABF4B;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 2.5rem;
+    text-align: left;
+    padding-bottom: .5rem;
+
+}
+
+.hero a,
+.mobile-hero a {
+    text-align: left;
+    color: #FF9E18;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.hero a:hover {
+    text-decoration: underline;
+}
+
+.mobile-hero {
+    display: none;
+    justify-content: center;
+    background-image: url('assets/mobile-hero-img.png');
+    background-size: cover;
+    height: 131vh;
+    align-items: flex-end;
+}
+
+.mobile-hero-copy {
+    width: 80%;
+}
+
+.centered-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 80px;
+}
+
+.centered-section h2 {
+    margin: 0;
+    color: #00B2E3;
+    font-size: 2.4rem;
+    padding-bottom: 1.5rem;
+}
+
+.centered-section p {
+    margin: 0;
+    color: #3F738D;
+    width: 50%;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-family: 'Numans', sans-serif;
+
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+}
+
+.card-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    width: 80%;
+}
+
+.card {
+    flex: 0 0 30%;
+    padding-top: 20px;
+    background-color: #fff;
+    text-align: center;
+    border-top: #A5BAC9 solid 4px;
+    cursor: pointer;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.card h3 {
+    margin: 0;
+    color: #004D71;
+    font-family: 'Numans', sans-serif;
+    padding: 1rem 1rem 0rem 0rem;
+
+}
+
+.card p {
+    margin: 0;
+    color: #3F738D;
+    font-family: 'Numans', sans-serif;
+    padding: 1rem 1rem 0rem 0rem;
+
+
+}
+
+.card-bio {
+    display: flex;
+    align-items: center;
+    padding: 1rem 1rem 0rem 0rem;
+
+}
+
+.card-bio img {
+    width: 25px;
+    padding-right: 1rem;
+}
+
+.card a {
+    color: #FF9E18;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Numans', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+
+}
+
+.overlay {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #004d71eb;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+
+.overlay.show {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+    
+}
+
+#overlay-img {
+    width: 50%;
+    height: 50%;
+}
+
+.overlay-content {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #fff;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+
+.mobile-overlay-content {
+    width: 30px;
+    height: 30px;
+}
+
+.mobile-linkedin-logo {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
+
+.mobile-logo-container {
+    padding-top: 10%;
+    padding-bottom: 2%;
+    display: none;
+    align-content: center;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.overlay-bio-container {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    align-items: center;
+}
+
+.overlay-header-container {
+    padding: 3rem;
+    width: 80%;
+}
+
+#header-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header-logo div {
+    border-left: white solid 1px;
+    height: 40px;
+}
+
+#header-logo img {
+    width: 34px;
+    height: 34px;
+}
+
+.overlay-header-container h2 {
+    color: white;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+.overlay-header-container h3 {
+    color: white;
+    font-family: 'Numans', sans-serif;
+
+}
+
+.overlay-header-container p {
+    color: white;
+    font-family: 'Numans', sans-serif;
+    line-height: 1.5rem;
+    font-weight: 300;
+
+}
+
+.mobile-phone-number {
+    display: none;
+}
+
+.close-btn {
+    display: none;
+}
+
+.mobile-arrow {
+    display: none;
+}
+
+.nav-banner {
+    display: none;
+}
+
+
+@media screen and (max-width: 1000px) {
+
+    .hero {
+        display: none;
+    }
+
+    .mobile-hero {
+        display: flex;
+    }
+
+    .hamburger-menu {
+        display: block;
+        font-size: xx-large;
+    }
+
+    .phone-number {
+        display: none;
+    }
+
+    .mobile-arrow {
+        display: flex;
+    }
+
+    .mobile-logo-container {
+        display: flex;
+    }
+
+    .nav ul {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #004d71eb;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .nav ul li {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        align-items: center;
+        height: 7em;
+    }
+
+    .nav ul li a {
+        font-size: 25px;
+    }
+
+    .nav.open {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .close-btn {
+        display: block;
+        height: 40px;
+        width: 40px;
+        padding-right: 3%;
+    }
+
+    .mobile-phone-number.open {
+        display: flex;
+        background-color: #00B2E3;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+        height: 12rem;
+    }
+    
+    .mobile-phone-number h3 {
+        color: white;
+        font-size: 25px;
+        font-family: 'Numans', sans-serif;
+    }
+    .nav-banner {
+        display: flex; 
+        justify-content: flex-end;
+    }
+
+    .overlay-header-container {
+        width: 50%;
+    }
+
+    .overlay.show {
+        overflow: scroll;
+        flex-direction: column;
+    }
+
+    .card-section {
+        flex-direction: column;
+    }
+
+    .card {
+        flex: 0 0 35%;
+        margin-bottom: 20px;
+    }
+
+    .overlay-bio-container {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .linkedin-logo {
+        display: none;
+    }
+
+    .overlay-content {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    .banner {
+        width: 98%
+    }
+
+    .centered-section {
+        padding: 0px;
+        padding-top: 80px;
+    }
+
+    .centered-section p {
+        width: 80%;
+    }
+
+    
+
+}
+
+@media screen and (max-width: 320px) {
+    .banner {
+        width: 98%;
+        flex-direction: column;
+    }
+
+    .nav.open {
+        top: 100px;
+        flex-wrap: nowrap;
+        max-height:88vh;
+    }
+
+    .card-section {
+        flex-direction: column;
+    }
+
+    .card {
+        flex: 0 0 35%;
+        margin-bottom: 20px;
+    }
+}
